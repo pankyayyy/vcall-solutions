@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+
+    <script language="javascript" type="text/javascript">
+        function buttonClick() {
+            var url = document.getElementById("inputURL").value;
+            window.location = url;
+        }
+    </script>
+
+</head>
+
+<body class="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="dashboard-title">
+                    <div class="call">V</div>
+                    <div class="call1">Call</div>
+                    <h3>Welcome
+                        <%= name %> to our
+                            <span class="dash">DASHBOARD</span></h3>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="row rowsize ">
+                    <!---- card2 -->
+                    <div class="col-lg-4 ">
+                        <div class="card cardback">
+                            <div class="face face1">
+                                <div class="content">
+                                    <i class="fas fa-calendar-plus"></i>
+                                    <h3>Create Room</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Create your room here to start with your personal or professional meet</p>
+                                    <a href="/views/room" class="btn btn-secondary">create room</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---- card2 -->
+                    <div class="col-lg-4">
+                        <div class="col-lg-2 ">
+                            <div class="card cardback">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <i class="fas fa-handshake"></i>
+                                        <h3>Join Room</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>Paste link to join</p><br>
+                                        <p> URL: <input type="text" id="inputURL" name="inputURL" value=""></p><br>
+                                        <input type="button" class="btn btn-secondary" value="Join Room" OnClick="buttonClick()" />
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---- card2 -->
+                    <div class="col-lg-4">
+                        <div class="col-lg-2 paddingjoint ">
+                            <div class="card cardback">
+                                <div class="face face1">
+                                    <div class="content">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <h3>Logout</h3>
+                                    </div>
+                                </div>
+                                <div class="face face2">
+                                    <div class="content">
+                                        <p>Logout yourself safely from here.</p>
+                                        <a href="/users/logout" class="btn btn-secondary">Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer py-4">
+            <div class="container-fluid ">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">
+                        Copyright &copy; VCall Services
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </div>
+                    <div class="col-lg-4 my-3 my-lg-0 footpad">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-right">
+                        All rights reserved | This website is made with <i class="fas fa-heart"></i> by THE BULLS.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+body {
+    background-color: #111;
+}
+
+.abc {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    align-items: stretch;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title i {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 0px;
+}
+
+.section-title .call {
+    font-size: 90px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 1px 0px;
+    line-height: 1;
+    margin: 0;
+    color: #e43c5c;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.section-title .call1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 6px 15px;
+    line-height: 1;
+    margin: 0;
+    background: rgba(255, 252, 252, 0.925);
+    color: #e43c5c;
+    display: inline-block;
+    border-radius: 50px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.section-title h3 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    color: rgba(255, 255, 255, 0.849);
+}
+
+span {
+    color: #e43c5c
+}
+
+.services {
+    padding: 55px 0;
+    overflow: hidden;
+}
+
+.services .container {
+    max-width: 1060px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.services .icon-box {
+    padding: 75px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #111;
+    box-shadow: 2px 0 35px 0 rgba(235, 237, 243, 0.048);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    text-align: center;
+}
+
+.services .icon-box::before {
+    content: "";
+    position: absolute;
+    background: #111;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.services .icon-box:hover::before {
+    background: #e43c5c;
+    top: 0;
+    border-radius: 0px;
+}
+
+.services .icon {
+    margin-bottom: 40px;
+}
+
+.services .icon i {
+    font-size: 100px;
+    line-height: 1;
+    color: #e43c5c;
+    transition: all 0.3s ease-in-out;
+}
+
+.services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.services .title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.884);
+}
+
+.services .icon-box:hover .title a,
+.services .icon-box:hover .description {
+    color: #fff;
+}
+
+.services .icon-box:hover .icon i {
+    color: #fff;
+}
+
+.services .icon-box .button:hover .btn1 {
+    color: #fff;
+}
+
+
+/*REGISTER PAGE CSS */
+
+.services .icon-box1 {
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #111;
+    box-shadow: 2px 0 35px 0 rgba(235, 237, 243, 0.048);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    text-align: center;
+}
+
+.linktitle {
+    color: white;
+}
+
+.heading {
+    font-size: 43px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding: 2px 5px;
+    line-height: 1;
+    margin: 0;
+    color: #e43c5c;
+    display: inline-block;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.services .icon-box1::before {
+    content: "";
+    position: absolute;
+    background: #111;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.services .icon-box1:hover::before {
+    background: #e43c5c;
+    top: 0;
+    border-radius: 0px;
+}
+
+.services .icon1 {
+    margin-bottom: 30px;
+}
+
+.services .icon1 i {
+    font-size: 60px;
+    line-height: 1;
+    color: #e43c5c;
+    transition: all 0.3s ease-in-out;
+}
+
+.services .title1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.services .title1 {
+    color: #fff;
+    text-decoration: none;
+}
+
+.href-underline {
+    text-decoration: none;
+}
+
+.services .icon-box1:hover .title1,
+.services .icon-box1:hover .description,
+.services .icon-box1:hover .icon1 .heading {
+    color: #fff;
+}
+
+.services .icon-box1:hover .icon1 i {
+    color: #fff;
+}
+
+.services .icon-box1:hover .new {
+    color: #111;
+}
+
+
+/*Regster end*/
+
+@media (min-width: 899px) {
+    .service {
+        flex: 0 0 auto;
+        width: 38%;
+    }
+    .container {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .row {
+        padding-right: calc(2.5rem/ 2);
+        padding-left: calc(2.5rem/ 2);
+        flex-wrap: wrap;
+    }
+    .service {
+        flex: 0 0 auto;
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .service {
+        flex: 0 0 auto;
+        width: 70%;
+    }
+}
+
+
+/*----------FOOTER DESIGN------------------   */
+
+.footer {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    padding: 120px;
+    border-top: 1px solid #333;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+}
+
+.footer>* {
+    margin: 0.25rem;
+}
+
+.footpad {
+    padding-left: 40px;
+}
+
+.footer i {
+    color: #e43c5c;
+}
